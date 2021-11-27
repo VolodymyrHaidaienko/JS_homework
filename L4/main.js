@@ -15,7 +15,7 @@
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
 // function totalCylinder(h,r){
-//     return 2*3,14*r*(h+r)
+//     return 2*3.14*r*(h+r)
 // }
 // console.log(totalCylinder(2,5))
 
@@ -79,7 +79,8 @@
 // - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
 
 // function getnumber(a,b,c){
-//     if (a<b && a<c){
+//     if (a<b && a
+//     <c){
 //         console.log(a)
 //     }else if (b<a && b<c){
 //         console.log(b)
