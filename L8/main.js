@@ -139,11 +139,30 @@
 
 // спробував написати код в циклі (в рекурсії виходить якась повна дурня:( )
 // let  getElementRules = document.getElementsByClassName("rules")
+// console.log(getElementRules)
 // let arrayRules =[]
+
 // for (let elementRules of getElementRules) {
 //     let rules = elementRules.classList[1]
 //     arrayRules.push(rules)
 //     }
-// console.log(arrayRules)
+
+
+
+let  getElementRules = document.getElementsByClassName("rules")
+let arrayRules =[]
+getRule(0)
+console.log(arrayRules)
+function getRule(index){
+
+    if (index<getElementRules.length){
+        arrayRules.push(getElementRules[index].classList[1])
+        getRule(index+1)
+    }
+}
+
+
+
+
 
 
