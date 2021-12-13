@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <style>
         .target{
             width: 200px;
@@ -46,6 +47,28 @@
             height: auto;
         }
 
+        #gallery{
+            width: 640px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #gallery .photos img{
+            width: 100%;
+            display: none;
+        }
+
+        #gallery .photos img:first-child{
+            display: block;
+        }
+
+        #buttons {
+            margin-top: 50px;
+        }
+
+
+
+
 
     </style>
 
@@ -57,9 +80,11 @@
     <span class="popunText" id="myPup"></span>
 </div>
 
-<input class="checkbox" type="checkbox" id="one" onchange="fun1()"> checkboxOne
-<input class="checkbox" type="checkbox" id="2" onchange="fun2()"> checkboxT
-<input class="checkbox" type="checkbox" id="3" onchange="fun3()"> checkboxOneS
+<input class="checkbox" type="checkbox" id="checkBox1" onchange="filterUsers()"> checkboxOne
+<input class="checkbox" type="checkbox" id="checkBox2" onchange="filterUsers()"> checkboxT
+<input class="checkbox" type="checkbox" id="checkBox3" onchange="filterUsers()"> checkboxOneS
 <script src ="additionalMain.js"></script>
+
+
 </body>
 </html>
