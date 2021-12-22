@@ -23,7 +23,7 @@ fetch('https://jsonplaceholder.typicode.com/users/')
         div.append(divId, divUser, button)
         document.body.append(div)
         button.onclick = function move(){
-            window.location.href="http://localhost:63342/JS/mini-project/user-details.html?_ijt=matfaudt1rkr8drd5esun0e5pv&_ij_reload=RELOAD_ON_SAVE"
+            window.location.href="user-details.html"
             let idUser = JSON.parse(localStorage.getItem('idUser'))||[]
             idUser.push(listElement.id)
             localStorage.setItem('idUser', JSON.stringify(idUser))

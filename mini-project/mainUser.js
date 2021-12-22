@@ -63,18 +63,19 @@ fetch(newStringHttps)
                         .then(postUser=>postUser.json())
                         .then(postsArray=>{
                                 for (let postsKey of postsArray) {
-                                        let div = document.createElement('div');
-                                        div.classList = 'postsInfo'
+
+                                        let divInfo = document.createElement('div');
+                                        divInfo.classList = 'postsInfo'
                                         let divText = document.createElement('div');
-                                        divText.innerText = 'title: '+ postsKey.title;
+                                        divText.innerText = 'Title: '+ postsKey.title;
                                         let button = document.createElement('button')
                                         button.innerText = 'Next';
-                                        div.append(divText, button)
-                                        document.body.appendChild(div);
+                                        divInfo.append(divText, button)
+                                        document.body.appendChild(divInfo);
 
 
                                         button.onclick = function postsUser(){
-                                                window.location.href = 'http://localhost:63342/JS/mini-project/post-details.html?_ijt=ke30k2anrdnipupjeovmu0qfah&_ij_reload=RELOAD_ON_SAVE'
+                                                window.location.href = 'post-details.html'
                                                 let id = JSON.parse(localStorage.getItem('idUser'))||[]
                                                 id.push(postsKey.id)
                                                 localStorage.setItem('id', JSON.stringify(id))
